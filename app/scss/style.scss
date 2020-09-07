@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #be2727;
+}
+
+.box {
+  display: flex;
+  transition: all 0.3s;
+}
