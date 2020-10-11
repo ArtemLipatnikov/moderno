@@ -14,7 +14,7 @@
 
 <body>
   <div class="wrapper">
-    <div class="content">
+    <div class="content page-content">
       <header class="header">
         <div class="header__top">
           <div class="container">
@@ -33,7 +33,7 @@
                 </a>
               </div>
               <div class="header__box">
-                <div class="notification__box header__btn-login--off">
+                <div class="notification__box">
                   <a class="notification header__circle active icon-bell-o" href="#">
                     <span>8</span>
                   </a>
@@ -61,7 +61,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="message__box header__btn-login--off">
+                <div class="message__box">
                   <a class="message header__circle active icon-envelope-o" href="#">
                     <span>5</span>
                   </a>
@@ -125,8 +125,8 @@
                 </div>
 
 
-                <div class="user__box ">
-                  <a class="user header__btn-login--off" href="#">
+                <div class="user__box">
+                  <a class="user" href="#">
                     <div class="user__inner">
                       <div class="user__images">
                         <img src="images/content/user-login.jpg" alt="">
@@ -154,9 +154,9 @@
                     </ul>
                   </div>
                 </div>
-                <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
-                <a class="header__btn header__btn-logout header__btn-login--off" href="">Logout</a>
-                <a class="header__btn header__btn-register" href="#">Register</a>
+                <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
+                <a class="header__btn header__btn-logout header__btn-login--on" href="">Logout</a>
+                <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
               </div>
               <div class="header__btn-menu icon-user"></div>
             </div>
@@ -228,269 +228,167 @@
         </div>
 
       </header>
+    </div>
 
-      <section class="search" style="background-image: url(images/search-bg.jpg);">
-        <div class="container">
-          <div class="search__inner">
-            <div class="search__inner-title">
-              Welcome To Foxtar Market Place!
+    <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__inner-text">
+            Premium WordPress Themes, Web Templates and Many More ...
+          </div>
+          <div class="search__inner-form">
+            <form action="">
+              <input type="text" placeholder="Search Your Keywords . . ." required>
+              <button type="submit">
+                <img src="images/icons/search.png" alt="icon">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-page">
+      <div class="container">
+        <div class="product-page__inner">
+
+
+          <aside class="product-page__aside">
+            <div class="category aside__item">
+              <div class="aside__title">
+                Categories
+              </div>
+              <ul class="category__list">
+                <li><a href="#">WordPress</a><span>(150)</span></li>
+                <li><a href="#">Joomla</a><span>(100)</span></li>
+                <li><a href="#">PSD</a><span>(50)</span></li>
+                <li><a href="#">Plugins</a><span>(60)</span></li>
+                <li><a href="#">Components</a><span>(40)</span></li>
+              </ul>
             </div>
-            <div class="search__inner-text">
-              Premium WordPress Themes, Web Templates and Many More ...
-            </div>
-            <div class="search__inner-form">
-              <form action="">
-                <input type="text" placeholder="Search Your Keywords . . ." required>
-                <button type="submit">
-                  <img src="images/icons/search.png" alt="icon">
-                </button>
+            <div class="price-range aside__item">
+              <div class="aside__title">
+                Price Range
+              </div>
+              <form>
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+                <button type="submit">Search</button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="top-sellers aside__item">
+              <div class="aside__title">
+                Top 10 Seller
+              </div>
+              <div class="aside__product-item">
+                <div class="product__item">
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#">
+                        Mobile APP
+                      </a>
+                      <a class="product__item-category" href="#">
+                        Site Template
+                      </a>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#">
+                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                      <span>Radius</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#">
+                        Mobile APP
+                      </a>
+                      <a class="product__item-category" href="#">
+                        Site Template
+                      </a>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#">
+                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                      <span>Radius</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/content/product-item.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#">
+                        Mobile APP
+                      </a>
+                      <a class="product__item-category" href="#">
+                        Site Template
+                      </a>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#">
+                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                      <span>Radius</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <section class="products">
-        <div class="products__wrapper">
-          <div class="container-fluid">
-            <div class="product__title title">
-              Let’s Check Out Our Newest Release Prodcuts
-            </div>
-            <div class="product__inner">
-              <div class="product__inner-btn">
-                <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter=".category-wordpress">WordPress</button>
-                <button type="button" data-filter=".category-joomla">Joomla</button>
-                <button type="button" data-filter=".category-plugins">Plugins</button>
-                <button type="button" data-filter=".category-component">Component</button>
-                <button type="button" data-filter=".category-psd">PSD</button>
-              </div>
-              <div class="product__inner-box">
-                <div class="product__item mix category-component">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-wordpress category-new">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-plugins">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-psd category-new">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-wordpress">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-joomla category-popular">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-psd category-popular">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-                <div class="product__item mix category-wordpress">
-                  <a class="product__item-img" href="#"
-                    style="background-image: url(images/content/product-item.jpg);"></a>
-                  <div class="product__item-content">
-                    <div class="product__item-name">
-                      <a class="product__item-title" href="#">
-                        Responsive Mobile APP
-                      </a>
-                      <a class="product__item-category" href="#">
-                        Site Template
-                      </a>
-                    </div>
-                    <div class="product__item-price">
-                      $19
-                    </div>
-                  </div>
-                  <div class="product__item-info">
-                    <a class="product__item-author" href="#">
-                      <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                      <span>Radiustheme</span>
-                    </a>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>(<span>05</span>)
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product__bottom-btn">
-              <button type="button" data-filter=".category-new">All New Items</button>
-              <button type="button" data-filter=".category-popular">Popular Items</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="product-slider">
-        <div class="product-slider__wrapper">
-          <div class="container-fluid">
-            <div class="product-slider__title title">
-              This Week Trending Products
+              <a href="#" class="top-sellers__link">View All</a>
             </div>
-            <div class="product-slider__inner">
+
+
+          </aside>
+          <div class="product-page__content">
+            <div class="product-page__filter">
+              <div class="product-page__filter-sort">
+                <button class="icon-sort-amount-desc"></button> Sort by: New Items <button
+                  class="icon-unsorted"></button>
+              </div>
+              <div>
+                <button class="icon-th-large active"></button>
+                <button class="icon-th-list"></button>
+              </div>
+            </div>
+            <div class="product-page__items">
               <div class="product__item">
                 <a class="product__item-img" href="#"
                   style="background-image: url(images/content/product-item.jpg);"></a>
@@ -502,9 +400,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -513,7 +415,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -528,9 +434,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -539,7 +449,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -554,9 +468,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -565,7 +483,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -580,9 +502,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -591,7 +517,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -606,9 +536,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -617,7 +551,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -632,9 +570,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -643,7 +585,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -658,9 +604,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -669,7 +619,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -684,9 +638,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -695,7 +653,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -710,9 +672,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -721,7 +687,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -736,9 +706,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -747,7 +721,11 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
@@ -762,9 +740,13 @@
                     <a class="product__item-category" href="#">
                       Site Template
                     </a>
+                    <div class="product__item-text">
+                      Pimply dummy text of the printing and typesetting industry.
+                    </div>
                   </div>
                   <div class="product__item-price">
                     $19
+                    <span>Sales ( 14 )</span>
                   </div>
                 </div>
                 <div class="product__item-info">
@@ -773,256 +755,28 @@
                     <span>Radiustheme</span>
                   </a>
                   <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
+                    <div class="rate-star"></div><span class="product__item-starnum">(05)</span>
+                  </div>
+                  <div class="product__item-list">
+                    <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                    <div class="icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
-              <div class="product__item">
-                <a class="product__item-img" href="#"
-                  style="background-image: url(images/content/product-item.jpg);"></a>
-                <div class="product__item-content">
-                  <div class="product__item-name">
-                    <a class="product__item-title" href="#">
-                      Responsive Mobile APP
-                    </a>
-                    <a class="product__item-category" href="#">
-                      Site Template
-                    </a>
-                  </div>
-                  <div class="product__item-price">
-                    $19
-                  </div>
-                </div>
-                <div class="product__item-info">
-                  <a class="product__item-author" href="#">
-                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                    <span>Radiustheme</span>
-                  </a>
-                  <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
-                  </div>
-                </div>
-              </div>
-              <div class="product__item">
-                <a class="product__item-img" href="#"
-                  style="background-image: url(images/content/product-item.jpg);"></a>
-                <div class="product__item-content">
-                  <div class="product__item-name">
-                    <a class="product__item-title" href="#">
-                      Responsive Mobile APP
-                    </a>
-                    <a class="product__item-category" href="#">
-                      Site Template
-                    </a>
-                  </div>
-                  <div class="product__item-price">
-                    $19
-                  </div>
-                </div>
-                <div class="product__item-info">
-                  <a class="product__item-author" href="#">
-                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                    <span>Radiustheme</span>
-                  </a>
-                  <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
-                  </div>
-                </div>
-              </div>
-              <div class="product__item">
-                <a class="product__item-img" href="#"
-                  style="background-image: url(images/content/product-item.jpg);"></a>
-                <div class="product__item-content">
-                  <div class="product__item-name">
-                    <a class="product__item-title" href="#">
-                      Responsive Mobile APP
-                    </a>
-                    <a class="product__item-category" href="#">
-                      Site Template
-                    </a>
-                  </div>
-                  <div class="product__item-price">
-                    $19
-                  </div>
-                </div>
-                <div class="product__item-info">
-                  <a class="product__item-author" href="#">
-                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                    <span>Radiustheme</span>
-                  </a>
-                  <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
-                  </div>
-                </div>
-              </div>
-              <div class="product__item">
-                <a class="product__item-img" href="#"
-                  style="background-image: url(images/content/product-item.jpg);"></a>
-                <div class="product__item-content">
-                  <div class="product__item-name">
-                    <a class="product__item-title" href="#">
-                      Responsive Mobile APP
-                    </a>
-                    <a class="product__item-category" href="#">
-                      Site Template
-                    </a>
-                  </div>
-                  <div class="product__item-price">
-                    $19
-                  </div>
-                </div>
-                <div class="product__item-info">
-                  <a class="product__item-author" href="#">
-                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                    <span>Radiustheme</span>
-                  </a>
-                  <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
-                  </div>
-                </div>
-              </div>
-              <div class="product__item">
-                <a class="product__item-img" href="#"
-                  style="background-image: url(images/content/product-item.jpg);"></a>
-                <div class="product__item-content">
-                  <div class="product__item-name">
-                    <a class="product__item-title" href="#">
-                      Responsive Mobile APP
-                    </a>
-                    <a class="product__item-category" href="#">
-                      Site Template
-                    </a>
-                  </div>
-                  <div class="product__item-price">
-                    $19
-                  </div>
-                </div>
-                <div class="product__item-info">
-                  <a class="product__item-author" href="#">
-                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                    <span>Radiustheme</span>
-                  </a>
-                  <div class="product__item-star">
-                    <div class="rate-star"></div>(<span>05</span>)
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="advantages">
-        <div class="container">
-          <div class="advantages__title title">
-            Why You Choose Foxtar Market Place?
-          </div>
-          <div class="advantages__inner">
-            <div class="advantages__item">
-              <div class="advantages__item-images iconsvg-1">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="56" viewBox="0 0 36 56">
-                  <title>lock</title>
-                  <path
-                    d="M10 24h16v-6c0-4.406-3.594-8-8-8s-8 3.594-8 8v6zM36 27v18c0 1.656-1.344 3-3 3h-30c-1.656 0-3-1.344-3-3v-18c0-1.656 1.344-3 3-3h1v-6c0-7.687 6.313-14 14-14s14 6.313 14 14v6h1c1.656 0 3 1.344 3 3z">
-                  </path>
-                </svg>
-              </div>
-              <div class="advantages__item-title">
-                Easily Buy & Sell
-              </div>
-              <div class="advantages__item-text">
-                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                industry's
-                standaum.
-              </div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__item-images iconsvg-2">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="48" height="56" viewBox="0 0 48 56">
-                  <title>gift</title>
-                  <path
-                    d="M29 42.375v-22.375h-10v22.375c0 1.094 0.906 1.625 2 1.625h6c1.094 0 2-0.531 2-1.625zM14.75 16h6.094l-3.938-5.031c-0.344-0.406-1.094-0.969-2.156-0.969-1.656 0-3 1.344-3 3s1.344 3 3 3zM36.25 13c0-1.656-1.344-3-3-3-1.063 0-1.813 0.563-2.156 0.969l-3.906 5.031h6.062c1.656 0 3-1.344 3-3zM48 21v10c0 0.563-0.438 1-1 1h-3v13c0 1.656-1.344 3-3 3h-34c-1.656 0-3-1.344-3-3v-13h-3c-0.563 0-1-0.438-1-1v-10c0-0.563 0.438-1 1-1h13.75c-3.875 0-7-3.125-7-7s3.125-7 7-7c2.094 0 4.031 0.875 5.25 2.406l4 5.156 4-5.156c1.219-1.531 3.156-2.406 5.25-2.406 3.875 0 7 3.125 7 7s-3.125 7-7 7h13.75c0.563 0 1 0.438 1 1z">
-                  </path>
-                </svg>
-              </div>
-              <div class="advantages__item-title">
-                Quality Products
-              </div>
-              <div class="advantages__item-text">
-                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                industry's
-                standaum.
-              </div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__item-images iconsvg-3">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
-                  <title>heart-o</title>
-                  <path
-                    d="M52 18.625c0-8.781-5.937-10.625-10.938-10.625-4.656 0-9.906 5.031-11.531 6.969-0.75 0.906-2.313 0.906-3.063 0-1.625-1.938-6.875-6.969-11.531-6.969-5 0-10.938 1.844-10.938 10.625 0 5.719 5.781 11.031 5.844 11.094l18.156 17.5 18.125-17.469c0.094-0.094 5.875-5.406 5.875-11.125zM56 18.625c0 7.5-6.875 13.781-7.156 14.063l-19.469 18.75c-0.375 0.375-0.875 0.563-1.375 0.563s-1-0.188-1.375-0.563l-19.5-18.813c-0.25-0.219-7.125-6.5-7.125-14 0-9.156 5.594-14.625 14.938-14.625 5.469 0 10.594 4.312 13.062 6.75 2.469-2.437 7.594-6.75 13.062-6.75 9.344 0 14.938 5.469 14.938 14.625z">
-                  </path>
-                </svg>
-              </div>
-              <div class="advantages__item-title">
-                100% Secure Payment
-              </div>
-              <div class="advantages__item-text">
-                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                industry's
-                standaum.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="author" style="background-image: url(images/author-bg.jpg);">
-        <div class="author__box">
-          <div class="author__title">
-            Over <span>20,000</span> Author
-            Are Involved Here!
-          </div>
-          <a href="#" class="author__link">
-            Become A Author
-          </a>
-        </div>
-      </section>
-
-      <section class="tutorial">
-        <div class="container">
-          <div class="tutorial__title title">
-            Free Monthly Tutorials To Help You With Your Project
-          </div>
-          <div class="tutorial__inner">
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(images/tutorial.jpg);">
-
-              </div>
-              <div class="tutorial__item-title">
-                Web Design Tutorials
-              </div>
-            </div>
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(images/tutorial.jpg);">
-
-              </div>
-              <div class="tutorial__item-title">
-                WordPress Tutorials
-              </div>
-            </div>
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(images/tutorial.jpg);">
-
-              </div>
-              <div class="tutorial__item-title">
-                HTML & CSS Tutorials
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
     <footer class="footer">
       <div class="footer__content">
         <div class="container">
@@ -1099,25 +853,6 @@
         </div>
       </div>
     </footer>
-  </div>
-
-  <div id="modal">
-    <div class="login__wrapper">
-      <div class="login__title">
-        Login
-      </div>
-      <form action="#">
-        <label class="login__label-name">
-          <input type="text" placeholder="Name" required>
-        </label>
-        <label class="login__label-pass">
-          <input type="text" placeholder="Password" required>
-        </label>
-        <button type="submit">submit</button>
-        <a class="creat-acc" href="#">Creat An Account?</a>
-        <a class="lost-pass" href="#">Lost Password?</a>
-      </form>
-    </div>
   </div>
 
 
