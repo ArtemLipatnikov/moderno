@@ -1,12 +1,11 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
 
 // start header
 
 .header {
   background-color: #ffffff;
-   
 }
 
 .header__top-inner {
@@ -138,8 +137,8 @@
   padding-right: 20px;
   position: relative;
   &::before {
-    content: '\f107';
-    font-family: 'icomoon';
+    content: "\f107";
+    font-family: "icomoon";
     position: absolute;
     color: #707070;
     font-size: 16px;
@@ -159,12 +158,11 @@
   }
   &__info {
     font-size: 14px;
-    line-height: 24px;    
+    line-height: 24px;
   }
   &__name {
     @include f500;
     color: #222222;
-
   }
   &__money {
     color: $green;
@@ -213,12 +211,12 @@
 }
 
 .circle__menu {
-    border-top: 1px solid #e0e0e0;
-    top: 62px;
-    right: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
+  border-top: 1px solid #e0e0e0;
+  top: 62px;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
 .basket__box,
@@ -368,14 +366,14 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   label {
     position: relative;
     display: block;
     width: 100%;
     &::before {
       position: absolute;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       font-size: 14px;
       color: #ffffff;
       left: 18px;
@@ -388,7 +386,7 @@
   }
 
   .login__label-pass:before {
-    content: '\f023';
+    content: "\f023";
   }
 
   input {
@@ -439,8 +437,8 @@
   font-size: 18px;
   position: relative;
   &::before {
-    content: '\f044';
-    font-family: 'icomoon';
+    content: "\f044";
+    font-family: "icomoon";
     position: absolute;
     top: 15px;
     left: 35px;
@@ -492,7 +490,7 @@
     margin: 0 auto;
     position: relative;
     input {
-      display: block; 
+      display: block;
       width: 100%;
       box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
       border-radius: 4px;
@@ -528,6 +526,12 @@
   background-color: $grey;
 }
 
+.products__wrapper,
+.product-slider__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .product__inner-btn {
   text-align: center;
   margin-bottom: 60px;
@@ -549,10 +553,15 @@
 
 .product__inner-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: -30px;
   flex-wrap: wrap;
 }
 
+.products .product__item{
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
+}
 .product__item {
   max-width: 442px;
   width: 100%;
@@ -592,7 +601,7 @@
     color: $bg;
     @include f700;
   }
-  &-info{
+  &-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -733,19 +742,19 @@
 
 .iconsvg-1 {
   svg {
-        width: 50px;
+    width: 50px;
   }
 }
 
 .iconsvg-2 {
   svg {
-        width: 70px;
+    width: 70px;
   }
 }
 
 .iconsvg-3 {
   svg {
-        width: 86px;
+    width: 86px;
   }
 }
 
@@ -819,7 +828,6 @@
   }
 }
 
-
 // end tutorial
 // start footer
 
@@ -851,14 +859,14 @@
   }
   &-title {
     font-size: 22px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: #ffffff;
     padding-bottom: 30px;
     margin-bottom: 30px;
     position: relative;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 2px;
@@ -880,8 +888,8 @@
   padding-left: 30px;
   position: relative;
   &::before {
-    content: '\f041';
-    font-family: 'icomoon';
+    content: "\f041";
+    font-family: "icomoon";
     color: $green;
     font-size: 18px;
     position: absolute;
@@ -891,7 +899,7 @@
 
 .footer__info-phone {
   &::before {
-    content: '\f095';
+    content: "\f095";
   }
 }
 
@@ -902,12 +910,12 @@
     padding-left: 22px;
     position: relative;
     &::before {
-      content: '\f105';
+      content: "\f105";
       color: $green;
       position: absolute;
       left: 0;
       font-size: 18px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 }
@@ -915,12 +923,12 @@
 .footer__social-link {
   margin-bottom: 33px;
   li {
-      display: inline-block;
-      & + li {
-        margin-left: 7px;
-      }
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
   }
-  a { 
+  a {
     width: 28px;
     height: 28px;
     background-image: url(../images/css_sprites.png);
@@ -975,9 +983,9 @@
     width: 43px;
     cursor: pointer;
     &::before {
-      content: '\f124' ;
+      content: "\f124";
       position: absolute;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       color: #fff;
       font-size: 20px;
       top: 11px;
@@ -1031,12 +1039,12 @@
     position: relative;
     padding-left: 20px;
     &::before {
-      content: '\f105';
+      content: "\f105";
       color: #8bc34a;
       position: absolute;
       left: 0;
       font-size: 18px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
   a {
@@ -1051,7 +1059,6 @@
 .price-range {
   form {
     padding-top: 20px;
-
   }
   button {
     margin-top: 55px;
@@ -1072,7 +1079,7 @@
       left: 58px;
       top: 15px;
       font-size: 15px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 }
@@ -1082,14 +1089,12 @@
   display: none;
 }
 
-.irs--flat
-.irs-line {
+.irs--flat .irs-line {
   background-color: #f2f5f8;
   height: 5px;
 }
 
-.irs--flat
-.irs-bar {
+.irs--flat .irs-bar {
   background-color: $bg;
   height: 5px;
 }
@@ -1103,19 +1108,25 @@
   top: 19px;
 }
 
-.irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-handle > i:first-child {
   display: none;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
   top: 45px;
 }
 
-.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before {
+.irs--flat .irs-from:before,
+.irs--flat .irs-single:before,
+.irs--flat .irs-to:before {
   display: none;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
   color: #78909c;
   font-size: 15px;
   line-height: 1.333;
@@ -1230,9 +1241,10 @@ button.icon-unsorted {
 
 .product-page__content {
   .product__item {
-    max-width: 270px;
+    flex-basis: calc(33.3333% - 30px);
     background-color: #ffffff;
     transition: all 0.5s;
+    margin-left: 30px;
   }
   .product__item-img {
     min-height: 180px;
@@ -1257,9 +1269,10 @@ button.icon-unsorted {
 
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 
 .pagination__list {
@@ -1278,7 +1291,7 @@ button.icon-unsorted {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    @include f500; 
+    @include f500;
     font-size: 16px;
     color: $bg;
     &.active {
@@ -1331,6 +1344,7 @@ button.icon-unsorted {
 .product__item {
   &.list {
     max-width: 100%;
+    flex-basis: 100%;
     .product__item-img {
       width: 240px;
       float: left;
@@ -1368,13 +1382,12 @@ button.icon-unsorted {
   }
 }
 
-
-
 // end product-page
 // start product-one
 
 .product-one {
   padding-bottom: 100px;
+  background-color: #f4f6f5;
 }
 
 .product-one__inner {
@@ -1392,7 +1405,7 @@ button.icon-unsorted {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px;
 }
 
 .product-one__images {
@@ -1605,7 +1618,7 @@ button.icon-unsorted {
     border: none;
     background-color: $text;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     font-size: 16px;
     font-weight: 700;
     text-align: center;
@@ -1615,7 +1628,7 @@ button.icon-unsorted {
     cursor: pointer;
     &::before {
       font-weight: 400;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       padding-right: 8px;
     }
   }
@@ -1690,13 +1703,13 @@ button.icon-unsorted {
   .icon-foursquare {
     background-image: url(../images/awards/awards-green.png);
     width: 34px;
-    height: 37px;    
+    height: 37px;
   }
 
   .icon-yen {
     background-image: url(../images/awards/awards-grey.png);
     width: 34px;
-    height: 37px;   
+    height: 37px;
   }
 }
 
@@ -1711,8 +1724,8 @@ button.icon-unsorted {
     color: #263238;
     padding-right: 13px;
     &::before {
-      content: '\f07a';
-      font-family: 'icomoon';
+      content: "\f07a";
+      font-family: "icomoon";
       color: #a6b5bb;
       padding-right: 20px;
     }
@@ -1775,11 +1788,11 @@ button.icon-unsorted {
   position: relative;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     background-image: url(../images/page-404.png);
     width: 150px;
     height: 292px;
-    margin-left:20px;
+    margin-left: 20px;
   }
 }
 
@@ -1821,7 +1834,7 @@ button.icon-unsorted {
     margin-top: 40px;
     margin-bottom: 15px;
   }
-  
+
   p {
     margin-bottom: 40px;
   }
@@ -1871,7 +1884,7 @@ button.icon-unsorted {
   margin-bottom: 20px;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 44px;
     height: 4px;
     background-color: $green;
@@ -1989,7 +2002,7 @@ button.icon-unsorted {
     }
   }
 
-  .tabs .tab+.tab {
+  .tabs .tab + .tab {
     border-left: none;
   }
 
@@ -2050,7 +2063,6 @@ button.icon-unsorted {
   }
 }
 
-
 // end settings
 // start profile
 
@@ -2084,7 +2096,7 @@ button.icon-unsorted {
   position: relative;
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     left: 11px;
     top: 13px;
     width: 9px;
@@ -2095,7 +2107,7 @@ button.icon-unsorted {
 
 .profile-on {
   &::before {
-      background-color: $green;
+    background-color: $green;
   }
 }
 
@@ -2123,8 +2135,8 @@ button.icon-unsorted {
   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
 
   &::before {
-    content: '\f003';
-    font-family: 'icomoon';
+    content: "\f003";
+    font-family: "icomoon";
     position: absolute;
     left: 50px;
     top: 17px;
@@ -2190,7 +2202,7 @@ button.icon-unsorted {
 .profile-settings {
   .product-one__tabs.settings__tabs {
     .tabs span {
-      font-family: 'Roboto', sans-serif !important;
+      font-family: "Roboto", sans-serif !important;
       font-weight: 500;
       color: #707070;
       position: relative;
@@ -2203,7 +2215,7 @@ button.icon-unsorted {
         position: absolute;
         left: 27px;
         font-size: 14px;
-        font-family: 'icomoon';
+        font-family: "icomoon";
         color: #d0d0d0;
       }
     }
@@ -2264,6 +2276,300 @@ button.icon-unsorted {
 }
 
 // end profile
-// start 
+// start upload
 
-@import 'media';
+.upload {
+  background-color: #f4f6f5;
+}
+
+.upload__inner {
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 110px;
+  button {
+    color: #ffffff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 175px;
+    cursor: pointer;
+  }
+}
+
+.upload__inner-title {
+  padding: 16px 35px 18px;
+  @include f500;
+  font-size: 24px;
+  color: $bg;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 40px;
+}
+
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+
+.upload-line {
+  margin-bottom: 25px;
+  display: flex;
+  label {
+    padding-top: 5px;
+    min-width: 175px;
+    padding-right: 15px;
+    color: #444444;
+    span {
+      color: $green;
+    }
+  }
+
+  select,
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0px 18px;
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+    padding: 8px 18px;
+  }
+
+  input[type="file"] {
+    outline: none;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-shadow: none;
+    color: #707070;
+    text-shadow: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    top: 0;
+    right: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    &::before {
+      font-family: "icomoon";
+      content: "\f0d7";
+    }
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-file {
+    width: 100%;
+    padding: 0px 18px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+  }
+
+  .jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin-left: 100px;
+    outline: none;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    font-size: 12px;
+    color: #707070;
+    line-height: 40px;
+  }
+
+  .jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 0 12px;
+    border: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #ffffff;
+    box-shadow: none;
+    text-shadow: none;
+    color: #444444;
+    outline: none;
+  }
+}
+
+// end upload
+// start withdrawals
+
+.withdrawals {
+  background-color: #f4f6f5;
+}
+
+.withdrawals__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+.withdrawals__col {
+  max-width: 570px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  height: 100%;
+}
+
+.withdrawals__title {
+  @include f500;
+  font-size: 24px;
+  padding: 18px 32px 24px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 30px;
+  color: $bg;
+}
+
+.withdrawals__content {
+  padding-left: 35px;
+  padding-right: 40px;
+  button {
+    margin-bottom: 50px;
+    color: #ffffff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    cursor: pointer;
+  }
+}
+
+.withdrawals__form-line {
+  margin-bottom: 25px;
+  label {
+    display: block;
+    width: 100%;
+    @include f500;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: $bg;
+    span {
+      color: $green;
+    }
+  }
+
+  input,
+  select {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0px 18px;
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-shadow: none;
+    color: #707070;
+    text-shadow: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    top: 0;
+    right: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    &::before {
+      font-family: "icomoon";
+      content: "\f0d7";
+    }
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+}
+
+.withdrawals__content-items {
+  padding-bottom: 35px;
+}
+
+.withdrawals__content-item {
+  display: flex;
+  height: 42px;
+  align-items: center;
+  font-size: 13px;
+  color: #444444;
+  &:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+}
+
+.withdrawals__content-date {
+  width: 154px;
+  padding-left: 20px;
+  @include f500;
+}
+
+.withdrawals__content-email {
+  width: 180px;
+  @include f500;
+}
+
+.withdrawals__content-price {
+  width: 70px;
+  @include f700;
+}
+
+.withdrawals__content-status {
+  width: 88px;
+  @include f700;
+
+  &.withdrawals__content-paid {
+    color: $green;
+  }
+}
+
+// end withdrawals
+
+@import "media";

@@ -12,7 +12,32 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     dots: true,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 801,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
   });
 
   $(".js-range-slider").ionRangeSlider({
@@ -52,6 +77,8 @@ $(function () {
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
   });
+
+  $('input[type="file"], select').styler();
 
   var mixer = mixitup('.product__inner-box');
 
